@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Proyect</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+ <body class="bg-gradient-to-b from-blue-200 to-gray-500">
+    
+    <header id="header" class="sm:h-36 lg:h-20 h-60 bg-black text-white bebas">
+        
+        <div class="container w-11/12 mx-auto flex lg:flex-row flex-col">
+
+            <div id="logo" class="mx-auto lg:flex-1">
+
+                <div class="group mt-3 w-64 pt-0.5 pb-0.5 text-center tracking-wider cursor-pointer overflow-hidden transition duration-100 rounded-sm bg-blue-primary hover:text-black hover:bg-gray-200"> <!-- tracking-wider= separacion entre letras -->
+                     <i class='bx bx-paint symbol block float-left text-3xl mt-2 ml-11 animate-bounce group-hover:animate-none'></i>
+                    <h3 class="uppercase block float-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-from-bellow">Tailwind</h3>    
+                </div>
+            </div>
+
+            <nav class="xs:mt-3 mx-auto lg:flex-1">
+                <ul class="mr-6 flex flex-col sm:flex-row h-20 items-center lg:justify-end text-2xl lg:text-center ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a hover:text-blue-primary">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a hover:text-blue-primary">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a hover:text-blue-primary">Formacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item-a hover:text-blue-primary">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="nav-item-a hover:text-blue-primary">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container w-full md:w-11/12 mx-auto">
+        <div id="banner" class="w-11/12 md:w-full h-40 sm:h-28 mx-auto border-8 border-white overflow-hidden shadow m-5 bg-banner-image bg-no-repeat bg-center bg-cover animate-bg-banner">
+            <h1 class="block text-white text-5xl font-normal tracking-wide mx-auto mt-6 text-center bebas text-shadow animate-text-banner">Proyecto centrado en Tailwind</h1>
+        </div>
+
+        <div id="cards" class="flex flex-col lg:flex-row justify-between">
+            <div class="card group hover:bg-black">
+                <span class="card-icon group-hover:text-blue-500 transform group-hover:scale-125 group-hover:pt-1 group-hover:animate-show-card-icon-left lg:group-hover:animate-show-card-icon">H</span>
+                <h2 class="card-category group-hover:animate-show-card-description lg:group-hover:animate-show-card-category group-hover:text-white">
+                    Desarrollo web
+                </h2>
+                <p class="card-description group-hover:animate-show-card-description group-hover:text-white">
+                    Aprende los principales lenguajes de desarrollo web
+                </p>
+            </div>
+
+            <div class="card group hover:bg-black">
+                <span class="card-icon group-hover:text-blue-500 transform group-hover:scale-125 group-hover:pt-1 group-hover:animate-show-card-icon-left lg:group-hover:animate-show-card-icon">_</span>
+                <h2 class="card-category group-hover:animate-show-card-description lg:group-hover:animate-show-card-category group-hover:text-white">
+                    Sistemas operativos
+                </h2>
+                <p class="card-description group-hover:animate-show-card-description group-hover:text-white">
+                    Aprende a administrar sistemas Linux y Windows                
+                </p>
+            </div>
+
+            <div class="card group hover:bg-black">
+                <span class="card-icon group-hover:text-blue-500 transform group-hover:scale-125 group-hover:pt-1 group-hover:animate-show-card-icon-left lg:group-hover:animate-show-card-icon">S</span>
+                <h2 class="card-category group-hover:animate-show-card-description lg:group-hover:animate-show-card-category group-hover:text-white">
+                    Hardware
+                </h2>
+                <p class="card-description group-hover:animate-show-card-description group-hover:text-white">
+                    Conoce los entresijos del harware                
+                </p>
+            </div>
+
+            <div class="card group hover:bg-black">
+                <span class="card-icon group-hover:text-blue-500 transform group-hover:scale-125 group-hover:pt-1 group-hover:animate-show-card-icon-left lg:group-hover:animate-show-card-icon">u</span>
+                <h2 class="card-category group-hover:animate-show-card-description lg:group-hover:animate-show-card-category group-hover:text-white">
+                    Redes e Internet
+                </h2>
+                <p class="card-description group-hover:animate-show-card-description group-hover:text-white">
+                    Aprende a configurar y administrar redes informáticas y servidores
+                </p>
+            </div>
+
+            <div class="card group hover:bg-black">
+                <i class='bx bxs-data text-6xl card-icon group-hover:text-blue-500 transform group-hover:scale-125 group-hover:pt-1 group-hover:animate-show-card-icon-left lg:group-hover:animate-show-card-icon'></i>
+                <h2 class="card-category group-hover:animate-show-card-description lg:group-hover:animate-show-card-category group-hover:text-white">
+                    Base de Datos
+                </h2>
+                <p class="card-description group-hover:animate-show-card-description group-hover:text-white">
+                    Aprende a montar y administrar bases de datos
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="container w-full mx-auto md:w-11/12 flex flex-col lg:flex-row mt-8">
+        <aside id="aside" class="flex-none order-1 sm:order-2 w-11/12 md:w-full lg:w-3/12 mx-auto">
+
+            <h3 class="aside-header">Buscar</h3>
+            <form action="" id="search" class="w-11/12 h-7 m-2.5 mx-auto bg-white border border-gray-200 rounded-sm shadow-inner">
+                <input type="text" class="w-10/12 h-6 border-none pl-1.5 rounded-md bg-transparent text-gray-500 transition duration-300 outline-none focus:outline-none">
+                <input type="button" class="float-right symbol bg-transparent h-6 cursor-pointer border-none text-gray-500 mr-4 text-base" value="L">
+            </form>
+
+            <h3 id="login" class="aside-header">Login</h3>
+            <div class="aside-box">
+                <form action="">
+                    <label for="email" class="symbol text-center absolute ml-10 lg:ml-7 mt-1 h-8">U</label>
+                    <input id="email" type="email" class="block mx-auto mt-5 w-10/12 h-8 border border-gray-300 shadow-inner rounded-md pl-7 text-gray-600 transition duration-300 outline-none focus:outline-none">    
+                    <label for="password" class="symbol text-center absolute h-8 text-xl ml-10 lg:ml-8 mt-6">w</label>
+                    <input id="password" type="password" class="block mx-auto mt-5 w-10/12 h-8 border border-gray-300 shadow-inner rounded-md pl-7 text-gray-600 transition duration-300 outline-none focus:outline-none">
+                    <div class="flex items-center justify-items-center">
+                        <input type="submit" value="Entrar" class="trebuchet flex-1 w-24 h-8 text-center mt-5 ml-5 mb-5 text-white text-base border border-blue-800 rounded-sm cursor-pointer font-light bg-gradient-to-b from-blue-400 to-blue-600">
+                        <input type="reset" value="Limpiar" class="trebuchet flex-1 w-24 h-8 text-center mt-5 ml-5 mb-5 mr-5 text-white text-base border border-blue-800 rounded-sm cursor-pointer font-light bg-gradient-to-b from-blue-400 to-blue-600">
+                    </div>
+                    <a href="#" class="block text-sm text-gray-600 hover:underline hover:text-blue-700 ml-6">Registrate aqui</a>
+                    <a href="#" class="block text-sm text-gray-600 hover:underline hover:text-blue-700 ml-6">Has olvidado tu contraseña?</a>
+                </form>
+            </div>
+
+            <h3 class="aside-header">Redes Sociales</h3>
+            <div id="social-medias" class="aside-box">
+                <div class="twitter flex group">
+                    <a href="#" class="social-icon">t</a>
+                    <p class="social-overlay group-hover:opacity-100 group-hover:transform group-hover:translate-x-1">Twitter</p>
+                </div>
+                <div class="facebook flex group">
+                    <a href="#" class="social-icon">f</a>
+                    <p class="social-overlay group-hover:opacity-100 group-hover:transform group-hover:translate-x-1">Facebook</p>
+                </div>
+                <div class="youtube flex group">
+                    <a href="#" class="social-icon">y</a>
+                    <p class="social-overlay group-hover:opacity-100 group-hover:transform group-hover:translate-x-1">Youtube</p>
+                </div>
+            </div>
+            <h3 class="aside-header">Patrocionadores</h3>
+            <div id="sponsors" class="aside-box">
+
+            </div>
+        </aside>
+
+        <section class="order-2 sm:order-1 flex-grow w-11/12 md:w-full mx-auto lg:mr-8 lg:ml-8">
+            <h2 class="bg-gradient-to-b from-gray-200 to-gray-300 bebas block w-full h-16 text-center text-4xl font-normal tracking-wide pt-4 border shadow-2xl">Ultimos articulos</h2>
+            <article class="article">
+                <div class="article-data">
+                    <span>Fecha: 10 de Diciembre</span>
+                    <span>Categoria: Prueba</span>
+                </div>
+
+                <h4 class="article-head">
+                    <a href="#">Titulo del articulo</a>
+                </h4>
+                <p class="article-body">Maecenas porttitor eget est vel elementum. Ut rhoncus neque sed purus vestibulum pharetra. Praesent laoreet nulla leo, sit amet pellentesque urna vulputate vitae. Donec id orci mauris. Donec mattis eleifend magna vel volutpat.</p>            
+            </article>
+            <article class="article">
+                <div class="article-data">
+                    <span>Fecha: 10 de Diciembre</span>
+                    <span>Categoria: Prueba</span>
+                </div>
+
+                <h4 class="article-head">
+                    <a href="#">Titulo del articulo</a>
+                </h4>
+                <p class="article-body">Maecenas porttitor eget est vel elementum. Ut rhoncus neque sed purus vestibulum pharetra. Praesent laoreet nulla leo, sit amet pellentesque urna vulputate vitae. Donec id orci mauris. Donec mattis eleifend magna vel volutpat.</p>            
+            </article>
+            <article class="article">
+                <div class="article-data">
+                    <span>Fecha: 10 de Diciembre</span>
+                    <span>Categoria: Prueba</span>
+                </div>
+
+                <h4 class="article-head">
+                    <a href="#">Titulo del articulo</a>
+                </h4>
+                <p class="article-body">Maecenas porttitor eget est vel elementum. Ut rhoncus neque sed purus vestibulum pharetra. Praesent laoreet nulla leo, sit amet pellentesque urna vulputate vitae. Donec id orci mauris. Donec mattis eleifend magna vel volutpat.</p>            
+            </article>
+            <article class="article">
+                <div class="article-data">
+                    <span>Fecha: 10 de Diciembre</span>
+                    <span>Categoria: Prueba</span>
+                </div>
+
+                <h4 class="article-head">
+                    <a href="#">Titulo del articulo</a>
+                </h4>
+                <p class="article-body">Maecenas porttitor eget est vel elementum. Ut rhoncus neque sed purus vestibulum pharetra. Praesent laoreet nulla leo, sit amet pellentesque urna vulputate vitae. Donec id orci mauris. Donec mattis eleifend magna vel volutpat.</p>            
+            </article>
+            <article class="article">
+                <div class="article-data">
+                    <span>Fecha: 10 de Diciembre</span>
+                    <span>Categoria: Prueba</span>
+                </div>
+
+                <h4 class="article-head">
+                    <a href="#">Titulo del articulo</a>
+                </h4>
+                <p class="article-body">Maecenas porttitor eget est vel elementum. Ut rhoncus neque sed purus vestibulum pharetra. Praesent laoreet nulla leo, sit amet pellentesque urna vulputate vitae. Donec id orci mauris. Donec mattis eleifend magna vel volutpat.</p>            
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer" class="w-full h-auto bg-black text-white overflow-hidden">
+        <div class="conteiner mx-auto flex flex-col lg:flex-row w-full lg:w-11/12 ">
+            <div id="menu-footer" class="footer-box">
+                <h5 class="footer-header">Menú</h5>
+                <ul class="footer-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Formacion</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>    
+            </div>
+
+            <div id="location" class="footer-box">
+                <h5 class="footer-header">Donde estamos?</h5>
+                <iframe class="w-full h-80 mt-3 border-4 border-gray-400 rounded-md shadow-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108949.66752682786!2d-62.163268991283374!3d-31.42302111347199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cb28228bc1d067%3A0x8f04abfe8c3700f4!2sSan%20Francisco%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1671549815667!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="info" class="footer-box">
+                <h5 class="footer-header">Desarrolado con</h5>
+                <p class="mb-5">
+                    <img class="block mx-auto" src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="">
+                </p>
+                <h5 class="footer-header">Optimazado para</h5>
+                <div class="flex flex-row browsers space-x-3 mb-2.5 justify-between">
+                    <a href="#">
+                        <img src="img/firefox-icon.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/chrome.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/Opera_256x256.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/safari.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/android.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/ios.png" alt="">
+                    </a>
+                </div>
+                <h5 class="footer-header">Autor</h5>
+                <p>&copy; Matías Luengo - Desarrollador</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
